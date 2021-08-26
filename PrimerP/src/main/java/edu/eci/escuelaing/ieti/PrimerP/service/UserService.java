@@ -1,4 +1,7 @@
 package edu.eci.escuelaing.ieti.PrimerP.service;
+import edu.eci.escuelaing.ieti.PrimerP.data.User;
+
+import java.util.List;
 
 public interface UserService {
     User create( User user );

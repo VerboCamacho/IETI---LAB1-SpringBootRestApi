@@ -1,21 +1,24 @@
 package edu.eci.escuelaing.ieti.PrimerP.data;
 
+import java.sql.Timestamp;
 import java.util.Date;
 
-public class Userdata {
+public class User {
     private String id;
     private String name;
     private String email;
     private String lastName;
     private Date createdAt;
 
-    public Userdata(String id, String name, String email, String lastName, Date createdAt) {
+    public User(String id, String name, String email, String lastName) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.lastName = lastName;
-        this.createdAt = createdAt;
+        this.createdAt = new Timestamp(System.currentTimeMillis());
     }
+
+
 
     public String getId() {
         return id;
